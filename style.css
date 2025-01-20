@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h2 {
+	  font-family: "Oswald", serif;
+	      font-size: 54px;
+
+}
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+footer.modern-footer {
+    background-color: #242424;
+    color: #fff;
+    padding: 20px 10px;
+    border-top-left-radius: 25px; /* Rounded corners at the top */
+    border-top-right-radius: 25px;
+    box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.2); /* Shadow for elevation */
+    width: 100%; /* Covers the full width of the page */
+    position: relative; /* Standard position for a footer */
+    bottom: 0;
+    text-align: center;
+}
+
+footer .footer-content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer .footer-content .email-link {
+    color: #4caf50; /* Green accent */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer .footer-content .email-link:hover {
+    color: #66bb6a; /* Lighter green on hover */
+}
+
+footer .footer-logo {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+footer .footer-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+@media (max-width: 768px) {
+    footer.modern-footer {
+        padding: 15px 5px;
+    }
+
+    footer .footer-content p {
+        font-size: 12px;
+    }
+}
+
+
+.image-container {
+    width: auto; /* Allow the container to resize based on the image width */
+    height: auto; /* Allow the container to resize based on the image height */
+    margin: 20px 0; /* Add some spacing around the container */
+    overflow: hidden; /* Hide any overflow (if needed) */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    text-align: center; /* Center-align the image horizontally */
+}
+
+.image-container img {
+    width: auto; /* Keep the original width of the image */
+    height: auto; /* Keep the original height of the image */
+    display: inline-block; /* Ensure proper alignment within the container */
+}
+
+/*----------------------------------------------------- Navbar styles--------------------------------------------------------------------- */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #242424;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    height: 70px; /* Specify the height of the navbar */
+}
+
+.navbar-container .logo {
+    position: relative;
+    margin: 0 20px;
+}
+
+.navbar-container .logo img {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-container .logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar-links.left-links,
+.navbar-links.right-links {
+    margin: 0 10px;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #000;
+    background-color: #4caf50;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px); /* Space between "Collection" and dropdown */
+    left: 0;
+    background-color: #333;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 100%; /* Matches the width of the "Collection" link */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #4caf50;
+    color: #000;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Dropdown animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add padding to the body to prevent overlap with navbar */
+body {
+    padding-top: 25px; /* Adjust according to the navbar height */
+}
+
+
+
+.dropdown-toggle::after {
+    content: " ▼"; /* Add a down arrow */
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+		
+/*----------------------------------------------------- LOGO BREAKDOWN--------------------------------------------------------------------- */
+.logo-breakdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Both columns are now equal */
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.logo-image img {
+    width: 100%; /* Makes the image responsive */
+    height: auto;
+    border-radius: 10px; /* Optional: Adds rounded corners to the logo */
+}
+
+.logo-text {
+    color: #000;
+}
+
+.logo-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.logo-text p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/*-----------------------------------------------------FOOTER-------------------------------------------------------------------- */
+
+footer a:hover {
+    color: #ffffff; /* Changes link color to white on hover */
+    text-decoration: underline; /* Adds underline effect */
+}
+
+footer img:hover {
+    transform: scale(1.05); /* Slight zoom effect on logo hover */
+    transition: transform 0.3s ease;
+}
+
+/*----------------------------------------------------- BOX--------------------------------------------------------------------- */
+
+
+  /* Box Container */
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Box Styling */
+.box {
+    background-color: #fff;
+    padding: 0; /* Removed padding to fit the image */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensures the image fits within the box */
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    background-color: #333;
+    color: white;
+}
+
+.box h2,
+.box p {
+    margin: 10px 20px;
+}
+
+.box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.box p {
+    font-size: 16px;
+}
+
+/* Image Section */
+.box-image {
+    width: 100%;
+    height: 200px; /* Set the height for consistency */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits nicely within the box */
+}
+
+/* Description Overlay */
+.box-description {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.box:hover .box-description {
+    display: block;
+}
+
+/* Description Text Spacing */
+.box-description p {
+    margin-bottom: 10px;
+}
+
+/* View Page Button */
+/* View Page Button */
+.view-page-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px; /* Add space between the buttons */
+}
+
+.view-page-btn:hover {
+    background-color: #005f73;
+}
+
+/* WARC Button */
+.warc-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #F4A261; /* Distinct orange tone */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.warc-btn:hover {
+    background-color: #E76F51; /* Slightly darker orange on hover */
+}
+
+/* Box Description (Hover Behavior) */
+.box-description a {
+    display: inline-block; /* Ensures both buttons are inline */
+    margin-top: 10px; /* Adds spacing above buttons */
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}
+
+
+/*---------------------------------------TEAM MEMBERSSS----------------------------------------------------- */
+/* Team section container */
+/* Team Section Styles */
+/* Team Section */
+/* Team Section */
+/* Team Section */
+/* General Styles for Team Section */
+/* General Section Styling */
+.team-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Section Title and Description */
+.team-section h2 {
+    font-size: 40px;
+    color: #1f2a44;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.team-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    font-family: "Lato", sans-serif;
+}
+
+/* Team Members Container */
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Team Member */
+.team-member {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Team Member Card */
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Image Container */
+.profile-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Placeholder background for missing images */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover .profile-image img {
+    transform: scale(1.1);
+}
+
+/* Member Info Section */
+.member-info {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.member-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #1f2a44;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.member-info h3 .subtitle {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+}
+
+.member-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+    font-family: "Lato", sans-serif;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #555;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #4caf50;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.social-links a i {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Subtitle Section */
+/* Subtitle Section */
+.subtitle-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.subtitle-content {
+    display: inline-block;
+    background: rgba(76, 175, 80, 0.1); /* Subtle green background */
+    border: 1px solid rgba(76, 175, 80, 0.2); /* Soft border */
+    border-radius: 10px;
+    padding: 20px 30px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.subtitle-content:hover {
+    transform: translateY(-5px); /* Adds a small lift effect on hover */
+}
+
+.subtitle-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #242424;
+}
+
+.subtitle-content p {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .subtitle-content h2 {
+        font-size: 24px;
+    }
+
+    .subtitle-content p {
+        font-size: 14px;
+    }
+}
+

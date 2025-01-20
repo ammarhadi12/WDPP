@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="style.css">
+<style>
+.hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 40px 0 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #2575fc;
+    margin: 10px auto 0;
+}
+
+/* Job Role Overview */
+.overview-section {
+    padding: 20px 0;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.overview-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+}
+
+.overview-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #f2f5ff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overview-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overview-item h3 {
+    font-size: 1.6rem;
+    color: #2575fc;
+    margin-bottom: 15px;
+}
+
+.overview-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Skills Required Section */
+.skills-section {
+    padding: 30px 0;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.skills-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.skills-column h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2575fc;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.skills-column h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #2575fc;
+    margin: 10px auto 0;
+}
+
+.skills-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.skills-column ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skills-column ul li::before {
+    content: "✓";
+    color: #2575fc;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Career Opportunities */
+.career-section {
+    padding: 30px 0;
+    background: #f2f5ff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.career-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.career-box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.career-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.career-box h3 {
+    font-size: 1.4rem;
+    color: #2575fc;
+    margin-bottom: 15px;
+}
+
+.career-box p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.career-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.career-box ul li {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+<div class="navbar-container">
+    <ul class="navbar-links left-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="httrack.html" class="dropdown-toggle">Collection</a>
+            <ul class="dropdown-menu">
+                <li><a href="httrack.html">News & Blogs</a></li>
+                <li><a href="conifer.html">Job Listing</a></li>
+                <li><a href="information.html">Job Overview</a></li>
+            </ul>
+        </li>
+    </ul>
+    <a href="#" class="logo">
+        <img src="image/wdpplogo.png" alt="Logo">
+    </a>
+    <ul class="navbar-links right-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+
+    </ul>
+</div>
+
+    <!-- Image Container -->
+    <div class="image-container">
+        <img src="image/information.png" alt="Background Image">
+    </div>
+ <section class="hero">
+    <div class="hero-content">
+        <h1>Web Design & Development Careers</h1>
+        <p>Your guide to understanding the roles, skills, and opportunities in the web industry.</p>
+    </div>
+</section>
+
+<section class="overview-section">
+    <h2 class="section-title">Job Role Overview</h2>
+    <div class="overview-container">
+        <div class="overview-item">
+            <h3>Web Designer</h3>
+            <p>Focuses on creating visually appealing and user-friendly website designs, incorporating layout, typography, and color schemes.</p>
+        </div>
+        <div class="overview-item">
+            <h3>Web Developer</h3>
+            <p>Responsible for coding and developing websites, ensuring performance, responsiveness, and functionality.</p>
+        </div>
+    </div>
+</section>
+
+<section class="skills-section">
+    <h2 class="section-title">Skills Required</h2>
+    <div class="skills-container">
+        <div class="skills-column">
+            <h3>Web Designer Skills</h3>
+            <ul>
+                <li>Proficiency in Figma, Photoshop</li>
+                <li>HTML & CSS basics</li>
+                <li>Color theory and typography</li>
+                <li>UX design principles</li>
+            </ul>
+        </div>
+        <div class="skills-column">
+            <h3>Web Developer Skills</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript expertise</li>
+                <li>React or Angular knowledge</li>
+                <li>Database management</li>
+                <li>Debugging and optimization</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="career-section">
+    <h2 class="section-title">Career Opportunities</h2>
+    <div class="career-container">
+        <div class="career-box">
+            <h3>Junior Roles</h3>
+            <p>Start your career:</p>
+            <ul>
+                <li>Junior Web Designer</li>
+                <li>Frontend Developer</li>
+                <li>UI/UX Intern</li>
+            </ul>
+        </div>
+        <div class="career-box">
+            <h3>Mid-Level Roles</h3>
+            <p>Take the next step:</p>
+            <ul>
+                <li>Web Designer</li>
+                <li>Full Stack Developer</li>
+                <li>Product Designer</li>
+            </ul>
+        </div>
+        <div class="career-box">
+            <h3>Senior Roles</h3>
+            <p>Lead the way:</p>
+            <ul>
+                <li>Senior Web Developer</li>
+                <li>Technical Architect</li>
+                <li>UX Director</li>
+            </ul>
+        </div>
+    </div>
+</section>
+	     <footer style="background-color: #242424; color: white; padding: 40px 20px; font-family: 'Poppins', sans-serif;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 40px;">
+        <!-- Left Layout: Logo and Description -->
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <img src="image/wdppfooter.png" alt="WDPP Logo" style="width: 150px; margin-bottom: 20px;">
+            <p style="line-height: 1.6; font-size: 14px; color: #d1d1d1;">
+                WDPP is a leading platform for archiving <br>accessing important web developer and design contents. 
+            </p>
+        </div>
+
+        <!-- Middle Layout: Quick Links -->
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h3 style="font-size: 18px; margin-bottom: 15px; color: #ffffff;">Quick Links</h3>
+            <ul style="list-style: none; padding: 0; line-height: 1.8; font-size: 14px; color: #d1d1d1;">
+                <li><a href="index.html" style="color: #d1d1d1; text-decoration: none;">Home</a></li>
+								                <li><a href="about.html" style="color: #d1d1d1; text-decoration: none;">About Us</a></li>
+
+                <li><a href="httrack.html" style="color: #d1d1d1; text-decoration: none;">Collection</a></li>
+                <li><a href="information.html" style="color: #d1d1d1; text-decoration: none;">Job Overview</a></li>
+                <li><a href="contact.html" style="color: #d1d1d1; text-decoration: none;">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Layout: Contact Information -->
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+            <h3 style="font-size: 18px; margin-bottom: 15px; color: #ffffff;">Contact Us</h3>
+            <p style="line-height: 1.6; font-size: 14px; color: #d1d1d1;">
+                <strong>Email:</strong> support@wdpp.com <br>
+                <strong>Phone:</strong> +60 1110240694 <br>
+                <strong>Address:</strong> UiTM Puncak Perdana , Selangor
+            </p>
+        </div>
+    </div>
+    <!-- Bottom Footer -->
+    <div style="border-top: 1px solid #3a3a3a; margin-top: 30px; padding-top: 20px; text-align: center; font-size: 14px; color: #b5b5b5;">
+        &copy; 2025 WDPP. All Rights Reserved. Advisor: Dr. Farrah Diana Saiful Bahry M<br> Updated by: Muhammad Ammar Hadi Bin Baharum, Muhammad Afiq Zulhilmi Bin Mohd Nizam, 
+		Wan Rif'at Danish Bin Riazuan | CDIM2634A
+
+
+    </div>
+</footer>
+</body>
+</html>
