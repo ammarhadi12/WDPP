@@ -1,0 +1,14 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.hubspot.com	TRUE	/	FALSE	1999999999	_cfuvid	Jj0L.wW_2NYBoCAxYW7b_.B7wtK8tb3GKLojPyaKX.Q-1734462791941-0.0.1.1-604800000
+no-cache.hubspot.com	TRUE	/	FALSE	1999999999	SameSite	None
+.hubspot.com	TRUE	/	FALSE	1999999999	__cf_bm	2MoNYzdhTuBiMgjpmQyoipx1_7nrGg9ipefVnu0nVLk-1734462792-1.0.1.1-ztZreq6mIWDtSzJkMAlwv4QOZIc4PLWBkdiEVZdMsivTcTOmIjfprPvSOAGzW5mfggOXQKtqPuNBS5boy6ERxw
+.hubspotusercontent-na1.net	TRUE	/	FALSE	1999999999	__cf_bm	qZDqVAYeQVODNxtE8kHw0eXNpq2r13bvj7JCMklFu3o-1734462792-1.0.1.1-IX7VInOW5qgG9XCqEXmCYc8BRMjxYmvACohrM48RF5LPhj2U1ahz_.I.0OhzWRNc2hkdbPCyQmNGrekwdVDVGg
+19498232.fs1.hubspotusercontent-na1.net	TRUE	/	FALSE	1999999999	SameSite	None
+.hs-scripts.com	TRUE	/	FALSE	1999999999	__cf_bm	orVRwobr0zH.nfQKmbrPnnNqeyKRQopPL_jHhcCuUPs-1734462794-1.0.1.1-nkNjny0Gu7p7GxAk6YSjpIctsoFjm6nmPwwYykaozrVaChuVeeviNx0d9mG7mQ_zPJiwfQUj2TLF8SywceA.LQ
+.hubspotusercontent.com	TRUE	/	FALSE	1999999999	__cf_bm	WZAjSqPjhqp687DbcN75p8rxMypip4CqsRKZzVUIDhU-1734462795-1.0.1.1-WgngCCruwVSDsdEofsPhCDUoZvxLmg6xnwKx.blfR6ePskQzRL.g2TmHm6_xuJBGIvT3_rPRJHPu_1d2xv7TjA
+.hsappstatic.net	TRUE	/	FALSE	1999999999	__cf_bm	SWPSlN5K5w88tzdS7cUFDEsfnPqzpHbI_ky22h3WWsI-1734462795-1.0.1.1-jwusbz4OGq.souS_8e3oTs61o_OtqVwNP3kyVUwC58_0b1_vznYrJZzsvOykwhO_C_dB.T7Bm3G0lbtoW0HAQA
+.www.deel.com	TRUE	/	FALSE	1999999999	__cf_bm	SC1t1dFC83ylFQ_pjADsj1gxwN.rVOeXmdL3dLuV8wU-1734462799-1.0.1.1-XHTrGcEgmVP_N5eVw3xeSuDbTfqr2js1b503kJm5h1xEg1gmvSx4D6y34Gx2a2JVPeqnqf.5_tKgHtzgU3bbuw
+.www.deel.com	TRUE	/	FALSE	1999999999	_cfuvid	Ii8_CuQRek.yKAOv04zsHVCSUoFki2FouRhoLqdtmIg-1734462799564-0.0.1.1-604800000
+www.deel.com	TRUE	/	FALSE	1999999999	SameSite	None
+

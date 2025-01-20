@@ -1,0 +1,67 @@
+#CybotCookiebotDialog {
+    font-family: 'Circularstd book', sans-serif !important;
+}
+#CybotCookiebotDialog a,
+#CybotCookiebotDialog div,
+#CybotCookiebotDialogBodyContentControls,
+#CybotCookiebotDialogBodyContentTitle {
+    font-family: 'Circularstd book', sans-serif !important;
+}
+#CybotCookiebotDialogBodyContent {
+    /* Layout and paddings here */
+    font-size: 13px !important;
+}
+.CybotCookiebotDialogBodyButton {
+    box-shadow: 0px 4px 8px rgba(0, 0, 8, 0.08) !important;
+    border-radius: 4px !important;
+}
+#CybotCookiebotDialogBodyContentTitle {
+    font-family: 'Circularstd book', sans-serif !important;
+    font-style: normal !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 16px !important;
+    color: #131533 !important;
+}
+#CybotCookiebotDialogBodyContentText {
+    font-family: 'Circularstd book', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    line-height: 16px !important;
+    color: #131533 !important;
+}
+#CybotCookiebotDialogBodyButtons {
+    /* Buttons layout and paddings here */
+}
+#CybotCookiebotDialogBodyButtonDecline {
+    padding: 8px;
+    border-color: #cfd0d6 !important;
+    background-color: #cfd0d6 !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 8, 0.08) !important;
+    border-radius: 4px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: #131533 !important;
+}
+#CybotCookiebotDialogBodyButtonAccept {
+    padding: 8px;
+    border-color: #2c71f0 !important;
+    background-color: #2c71f0 !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 8, 0.08) !important;
+    border-radius: 4px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: #ffffff !important;
+}
+#CybotCookiebotDialogBodyButtonDetails {
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 13px !important;
+    line-height: 24px !important;
+    color: #727283 !important;
+}
